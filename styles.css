@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+    margin: 0;
+}
+
+#imageContainer {
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+
+#mainImage, #overlayImage {
+    width: 300px; 
+    height: auto;
+    margin-bottom: 20px; 
+}
+
+#overlayImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none; 
+}
+
+#mainImage:hover {
+    z-index: 1; 
+}
+
+#mainImage:hover + #overlayImage {
+    display: block; 
+}
+
+#buttonContainer {
+    margin-bottom: 20px; 
+}
+
+#generateCatFactBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+#generateCatFactBtn:hover {
+    background-color: #45a049;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    border-radius: 10px; 
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+}
+
+.modal-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}

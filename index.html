@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cat</title>
+</head>
+<body>
+    <div id="imageContainer">
+        <img id="mainImage" src="cat (1).png" alt="Cat Image">
+        <img id="overlayImage" src="cat (3).png" alt="Overlay Image">
+    </div>
+
+    <div id="buttonContainer">
+        <button id="generateCatFactBtn">Generate Random Cat Fact</button>
+    </div>
+
+    <div id="catFactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="modal-heading">Random Cat Fact</h2>
+            <p id="catFactText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
